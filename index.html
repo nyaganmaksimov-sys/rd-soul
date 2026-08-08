@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ресторанный дом SOUL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ресторан SOUL · Светлый дизайн</title>
     <!-- Google Fonts & Font Awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        /* ========== RESET & BASE ========== */
+        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
@@ -18,104 +18,88 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            color: #e0e0e0;
-            background: #0a0a0a;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
+            font-family: 'Inter', sans-serif;
+            background: #f9f7fc;
+            color: #1e1a2b;
+            line-height: 1.5;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
 
-        /* ========== TYPOGRAPHY ========== */
-        h1, h2, h3, h4 {
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: -0.01em;
         }
 
         h2 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             text-align: center;
-            margin-bottom: 0.5rem;
-            color: #f5f0eb;
+            margin-bottom: 0.25rem;
+            color: #1e1a2b;
         }
 
         .subtitle {
             text-align: center;
             font-weight: 300;
-            font-size: 1.2rem;
-            color: #a0a0a0;
+            font-size: 1.15rem;
+            color: #6b5f7a;
             margin-bottom: 3rem;
         }
 
         .section {
             padding: 70px 0;
-            border-bottom: 1px solid #1a1a1a;
         }
 
-        .section:last-of-type {
-            border-bottom: none;
-        }
-
-        /* ========== BUTTONS ========== */
+        /* ===== BUTTONS ===== */
         .btn {
             display: inline-block;
-            background: #c9a96e;
-            color: #0a0a0a;
-            padding: 16px 40px;
+            background: #7c3aed;
+            color: #fff;
+            padding: 14px 36px;
             border: none;
-            border-radius: 50px;
+            border-radius: 60px;
             font-size: 1rem;
             font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+            transition: all 0.25s ease;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+            text-decoration: none;
         }
 
         .btn:hover {
-            background: #b8925a;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(201, 169, 110, 0.4);
+            background: #6d28d9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid #c9a96e;
-            color: #c9a96e;
+            border: 2px solid #7c3aed;
+            color: #7c3aed;
             box-shadow: none;
         }
 
         .btn-outline:hover {
-            background: #c9a96e;
-            color: #0a0a0a;
+            background: #7c3aed;
+            color: #fff;
         }
 
-        .btn-small {
-            padding: 10px 25px;
-            font-size: 0.85rem;
-        }
-
-        /* ========== HEADER ========== */
+        /* ===== HEADER ===== */
         header {
-            background: rgba(10, 10, 10, 0.95);
-            padding: 15px 0;
-            color: #e0e0e0;
+            background: rgba(255, 255, 255, 0.80);
+            backdrop-filter: blur(8px);
+            padding: 14px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid #1a1a1a;
-            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #ede9f5;
         }
 
         .header-inner {
@@ -129,65 +113,51 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 700;
-            letter-spacing: 2px;
-            color: #f5f0eb;
+            color: #1e1a2b;
         }
 
         .logo span {
-            color: #c9a96e;
+            color: #7c3aed;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 28px;
             list-style: none;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .nav-links a {
-            transition: color 0.3s;
+            text-decoration: none;
+            color: #1e1a2b;
+            transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #c9a96e;
+            color: #7c3aed;
         }
 
         .header-phone {
             font-weight: 500;
-            color: #c9a96e;
+            color: #7c3aed;
         }
 
         .header-phone i {
             margin-right: 8px;
         }
 
-        /* Mobile menu toggle */
         .menu-toggle {
             display: none;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             cursor: pointer;
+            color: #1e1a2b;
         }
 
-        /* ========== HERO ========== */
+        /* ===== HERO ===== */
         .hero {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-            color: #f5f0eb;
-            padding: 100px 0 80px;
-            position: relative;
-            overflow: hidden;
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            right: -10%;
-            top: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+            background: linear-gradient(145deg, #f3effa 0%, #ede7f7 100%);
+            padding: 80px 0 70px;
+            border-bottom: 1px solid #e4ddf0;
         }
 
         .hero .container {
@@ -195,178 +165,179 @@
             align-items: center;
             gap: 50px;
             flex-wrap: wrap;
-            position: relative;
-            z-index: 2;
         }
 
         .hero-content {
-            flex: 1 1 500px;
+            flex: 1 1 480px;
         }
 
         .hero-content h1 {
-            font-size: 3.8rem;
-            line-height: 1.2;
-            margin-bottom: 20px;
+            font-size: 3.6rem;
+            line-height: 1.15;
+            margin-bottom: 16px;
         }
 
         .hero-content h1 span {
-            color: #c9a96e;
+            color: #7c3aed;
         }
 
         .hero-content p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 300;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            max-width: 500px;
-            color: #b0b0b0;
+            color: #3d3450;
+            margin-bottom: 28px;
+            max-width: 480px;
         }
 
         .hero-badge {
-            background: rgba(201, 169, 110, 0.15);
-            border: 1px solid #c9a96e;
+            background: rgba(124, 58, 237, 0.10);
+            border: 1px solid #c4b0e6;
             display: inline-block;
-            padding: 8px 25px;
-            border-radius: 30px;
-            font-size: 0.9rem;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.85rem;
             font-weight: 500;
-            margin-bottom: 20px;
-            color: #c9a96e;
+            color: #5b3b8c;
+            margin-bottom: 18px;
         }
 
         .hero-image {
-            flex: 1 1 400px;
+            flex: 1 1 360px;
             text-align: center;
         }
 
         .hero-image img {
             max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-            border: 1px solid #1a1a1a;
+            border-radius: 28px;
+            box-shadow: 0 20px 50px rgba(124, 58, 237, 0.10);
+            border: 1px solid #e4ddf0;
         }
 
-        /* ========== ABOUT ========== */
-        .about-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .about-text {
-            flex: 2 1 400px;
-        }
-
-        .about-text ul {
-            list-style: none;
+        /* ===== EXPANDABLE FEATURES (аккордеон-галерея) ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
             margin-top: 20px;
         }
 
-        .about-text ul li {
-            margin-bottom: 12px;
-            font-weight: 300;
-            color: #b0b0b0;
+        .feature-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 24px 20px 20px;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
+            border: 1px solid #ede9f5;
+            transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .about-text ul li i {
-            color: #c9a96e;
-            margin-right: 15px;
-            width: 24px;
+        /* При наведении — карточка расширяется */
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.12);
+            border-color: #d4c4ee;
+            min-height: 240px;
         }
 
-        .about-image {
-            flex: 1 1 300px;
-            text-align: center;
+        .feature-card .icon {
+            font-size: 2.2rem;
+            color: #7c3aed;
+            margin-bottom: 14px;
+            transition: transform 0.3s ease;
         }
 
-        .about-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 1px solid #1a1a1a;
+        .feature-card:hover .icon {
+            transform: scale(1.05);
         }
 
-        /* ========== FEATURES ========== */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .feature-item {
-            background: #1a1a1a;
-            padding: 30px 20px;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid #2a2a2a;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .feature-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .feature-item i {
-            font-size: 2.5rem;
-            color: #c9a96e;
-            margin-bottom: 15px;
-        }
-
-        .feature-item h4 {
+        .feature-card h4 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.2rem;
-            margin-bottom: 8px;
-            color: #f5f0eb;
+            font-weight: 600;
+            color: #1e1a2b;
+            margin-bottom: 6px;
         }
 
-        .feature-item p {
+        .feature-card p {
             font-weight: 300;
-            color: #a0a0a0;
+            color: #5f536e;
             font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 0;
+            transition: opacity 0.3s ease;
         }
 
-        /* ========== MENU PREVIEW ========== */
+        /* Доп. текст, который появляется при наведении */
+        .feature-card .extra {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            font-weight: 300;
+            color: #3d3450;
+            font-size: 0.9rem;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+
+        .feature-card:hover .extra {
+            max-height: 120px;
+            opacity: 1;
+            margin-top: 12px;
+        }
+
+        .feature-card .extra i {
+            color: #7c3aed;
+            margin-right: 6px;
+        }
+
+        /* ===== MENU PREVIEW ===== */
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 28px;
+            margin-top: 24px;
         }
 
         .menu-item {
-            background: #1a1a1a;
-            border-radius: 20px;
+            background: #ffffff;
+            border-radius: 24px;
             overflow: hidden;
-            border: 1px solid #2a2a2a;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #ede9f5;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .menu-item:hover {
             transform: scale(1.02);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.08);
         }
 
         .menu-item img {
             width: 100%;
-            height: 200px;
+            height: 180px;
             object-fit: cover;
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: 1px solid #ede9f5;
         }
 
         .menu-item-content {
-            padding: 20px;
+            padding: 18px 20px 20px;
         }
 
         .menu-item-content h4 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: #f5f0eb;
+            color: #1e1a2b;
+            margin-bottom: 4px;
         }
 
         .menu-item-content p {
-            color: #b0b0b0;
+            color: #5f536e;
             font-weight: 300;
             font-size: 0.9rem;
         }
@@ -374,90 +345,53 @@
         .menu-item-content .price {
             font-weight: 700;
             font-size: 1.1rem;
-            margin: 10px 0;
-            color: #c9a96e;
+            margin: 10px 0 12px;
+            color: #7c3aed;
         }
 
         .menu-item-content .btn {
-            padding: 8px 20px;
+            padding: 8px 18px;
             font-size: 0.8rem;
             width: 100%;
             text-align: center;
         }
 
-        /* ========== GALLERY ========== */
+        /* ===== GALLERY ===== */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+            margin-top: 24px;
         }
 
         .gallery-grid img {
             width: 100%;
-            height: 250px;
+            height: 230px;
             object-fit: cover;
-            border-radius: 15px;
-            transition: transform 0.4s, box-shadow 0.4s;
-            border: 1px solid #2a2a2a;
+            border-radius: 20px;
+            border: 1px solid #ede9f5;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .gallery-grid img:hover {
             transform: scale(1.03);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.10);
         }
 
-        /* ========== EVENTS ========== */
-        .events-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .event-card {
-            background: #1a1a1a;
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid #2a2a2a;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .event-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .event-card i {
-            font-size: 2.5rem;
-            color: #c9a96e;
-            margin-bottom: 15px;
-        }
-
-        .event-card h4 {
-            font-size: 1.3rem;
-            color: #f5f0eb;
-            margin-bottom: 10px;
-        }
-
-        .event-card p {
-            color: #b0b0b0;
-            font-weight: 300;
-        }
-
-        /* ========== REVIEWS ========== */
+        /* ===== REVIEWS ===== */
         .reviews-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 28px;
+            margin-top: 24px;
         }
 
         .review-card {
-            background: #1a1a1a;
-            padding: 25px;
-            border-radius: 20px;
-            border: 1px solid #2a2a2a;
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 24px;
+            border: 1px solid #ede9f5;
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.04);
         }
 
         .review-card .stars {
@@ -468,124 +402,133 @@
         .review-card p {
             font-style: italic;
             font-weight: 300;
-            color: #d0d0d0;
+            color: #2d253a;
         }
 
         .review-card .author {
             font-weight: 500;
-            margin-top: 15px;
-            color: #c9a96e;
+            margin-top: 14px;
+            color: #7c3aed;
         }
 
-        /* ========== FORM ========== */
+        /* ===== FORM ===== */
         .form-section {
-            background: #0a0a0a;
-            border-top: 1px solid #1a1a1a;
-            border-bottom: 1px solid #1a1a1a;
+            background: #f3effa;
+            border-top: 1px solid #e4ddf0;
+            border-bottom: 1px solid #e4ddf0;
         }
 
         .form-wrapper {
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
-            margin-top: 30px;
+            margin-top: 24px;
         }
 
         .form-wrapper form {
-            flex: 2 1 400px;
+            flex: 2 1 380px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
         }
 
         .form-wrapper form input,
         .form-wrapper form textarea,
         .form-wrapper form select {
-            padding: 15px 20px;
-            border: 1px solid #333;
-            border-radius: 10px;
-            background: #1a1a1a;
-            color: #e0e0e0;
+            padding: 14px 18px;
+            border: 1px solid #dcd4ea;
+            border-radius: 16px;
+            background: #ffffff;
+            color: #1e1a2b;
             font-size: 1rem;
-            transition: border 0.3s;
+            transition: border 0.2s;
         }
 
         .form-wrapper form input:focus,
         .form-wrapper form textarea:focus,
         .form-wrapper form select:focus {
             outline: none;
-            border-color: #c9a96e;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08);
         }
 
         .form-wrapper form textarea {
             resize: vertical;
-            min-height: 100px;
+            min-height: 90px;
         }
 
-        .form-wrapper .contacts-info {
+        .contacts-info {
             flex: 1 1 200px;
         }
 
         .contacts-info h4 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #f5f0eb;
+            margin-bottom: 18px;
+            color: #1e1a2b;
         }
 
         .contacts-info p {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 300;
-            color: #b0b0b0;
+            color: #3d3450;
         }
 
         .contacts-info i {
-            color: #c9a96e;
+            color: #7c3aed;
             margin-right: 12px;
-            width: 24px;
+            width: 22px;
         }
 
         .contacts-info a {
-            color: #c9a96e;
+            color: #7c3aed;
+            text-decoration: none;
         }
 
         .contacts-info .whatsapp {
             display: inline-block;
             background: #25d366;
-            padding: 10px 25px;
-            border-radius: 50px;
-            color: #0a0a0a;
+            padding: 10px 24px;
+            border-radius: 60px;
+            color: #fff;
             font-weight: 500;
-            margin-top: 10px;
-            transition: background 0.3s;
+            margin-top: 8px;
+            transition: background 0.2s;
         }
 
         .contacts-info .whatsapp:hover {
             background: #1da851;
         }
 
-        /* ========== FOOTER ========== */
+        /* ===== FOOTER ===== */
         footer {
-            background: #0a0a0a;
-            color: #888;
-            padding: 30px 0;
+            background: #ffffff;
+            color: #5f536e;
+            padding: 28px 0;
             text-align: center;
             font-weight: 300;
             font-size: 0.9rem;
-            border-top: 1px solid #1a1a1a;
+            border-top: 1px solid #ede9f5;
         }
 
         footer span {
-            color: #c9a96e;
+            color: #7c3aed;
         }
 
-        /* ========== RESPONSIVE ========== */
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
                 flex-direction: column;
                 width: 100%;
-                gap: 10px;
-                padding: 20px 0;
+                gap: 12px;
+                padding: 16px 0;
             }
 
             .nav-links.active {
@@ -598,7 +541,7 @@
 
             .header-phone {
                 margin-left: auto;
-                margin-right: 20px;
+                margin-right: 18px;
             }
 
             .hero-content h1 {
@@ -610,7 +553,7 @@
             }
 
             .hero {
-                padding: 60px 0;
+                padding: 50px 0;
             }
 
             .section {
@@ -620,15 +563,27 @@
             .form-wrapper {
                 flex-direction: column;
             }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                min-height: 140px;
+            }
+
+            .feature-card:hover {
+                min-height: 200px;
+            }
         }
 
         @media (max-width: 480px) {
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.0rem;
             }
 
             .btn {
-                padding: 14px 25px;
+                padding: 12px 24px;
                 width: 100%;
                 text-align: center;
             }
@@ -637,16 +592,14 @@
 </head>
 <body>
 
-<!-- ========== HEADER ========== -->
+<!-- ===== HEADER ===== -->
 <header>
     <div class="container header-inner">
         <div class="logo">SOUL <span>•</span></div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#features">Опции</a></li>
             <li><a href="#menu">Меню</a></li>
             <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#events">Мероприятия</a></li>
             <li><a href="#reviews">Отзывы</a></li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
@@ -659,92 +612,94 @@
     </div>
 </header>
 
-<!-- ========== HERO ========== -->
+<!-- ===== HERO ===== -->
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-fire"></i> Лаундж-ресторан в самом сердце Москвы</div>
+            <div class="hero-badge"><i class="fas fa-sparkles"></i> Уют &amp; вдохновение</div>
             <h1>Ресторанный дом <span>SOUL</span></h1>
-            <p>2 этажа с атмосферным дизайном. Авторская кухня, караоке, лаунж-зоны и полноценная барная карта.</p>
-            <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i> Забронировать столик</a>
+            <p>Светлая атмосфера, авторская кухня и пространство для ваших событий. От романтического ужина до шумной вечеринки.</p>
+            <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i> Забронировать</a>
         </div>
         <div class="hero-image">
-            <img src="https://picsum.photos/seed/restaurant/600/400" alt="Ресторанный дом SOUL">
+            <img src="https://picsum.photos/seed/soul_light/600/400" alt="Ресторан SOUL" />
         </div>
     </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
-<section class="section" id="about">
-    <div class="container">
-        <h2>О ресторанном доме</h2>
-        <p class="subtitle">Пространство для вашего идеального отдыха</p>
-        <div class="about-grid">
-            <div class="about-text">
-                <ul>
-                    <li><i class="fas fa-chandelier"></i> Банкетный зал «Сиреневый» — до 100 человек</li>
-                    <li><i class="fas fa-music"></i> Зал «SHUM» для шумных вечеринок</li>
-                    <li><i class="fas fa-microphone-alt"></i> KARAOKE & LOUNGE — продолжение вечера</li>
-                    <li><i class="fas fa-child"></i> Детская комната с аниматором</li>
-                    <li><i class="fas fa-chef"></i> Авторская кухня от шеф-повара Борисенко Бориса Олеговича</li>
-                </ul>
-                <p style="margin-top: 20px; color: #b0b0b0;">Один комплекс — любые форматы: от камерного ужина до свадьбы на 100 человек.</p>
-            </div>
-            <div class="about-image">
-                <img src="https://picsum.photos/seed/interior/500/400" alt="Интерьер ресторана">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== FEATURES ========== -->
+<!-- ===== EXPANDABLE FEATURES (аккордеон-галерея) ===== -->
 <section class="section" id="features">
     <div class="container">
         <h2>Весь набор опций для приятного отдыха</h2>
-        <p class="subtitle">Всё, что нужно для идеального вечера</p>
+        <p class="subtitle">Вдохновение, комфорт и яркие впечатления в каждой детали</p>
+
         <div class="features-grid">
-            <div class="feature-item">
-                <i class="fas fa-couch"></i>
+            <!-- Карточка 1 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-couch"></i></div>
                 <h4>Изолированные лаунж-зоны</h4>
                 <p>Уединение и отдых от суеты будней</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Зоны для встреч и релакса
+                </div>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-utensil-spoon"></i>
+            <!-- Карточка 2 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-utensil-spoon"></i></div>
                 <h4>Авторские блюда</h4>
                 <p>Wow-впечатления, вкусно, фотогенично</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Сезонное меню от шефа
+                </div>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-glass-cheers"></i>
+            <!-- Карточка 3 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-glass-cheers"></i></div>
                 <h4>Полноценный бар</h4>
                 <p>Коктейли, вино, крепкий алкоголь</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Авторские коктейли и классика
+                </div>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-smoking"></i>
+            <!-- Карточка 4 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-smoking"></i></div>
                 <h4>Кальянная карта</h4>
                 <p>200+ миксов, премиум-бренды</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Индивидуальный подход
+                </div>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-gamepad"></i>
+            <!-- Карточка 5 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-gamepad"></i></div>
                 <h4>PS4 и настольные игры</h4>
                 <p>Отдых компанией, общение, знакомства</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Весело и без скуки
+                </div>
             </div>
-            <div class="feature-item">
-                <i class="fas fa-camera"></i>
+            <!-- Карточка 6 -->
+            <div class="feature-card">
+                <div class="icon"><i class="fas fa-camera"></i></div>
                 <h4>Хороший свет для фото</h4>
                 <p>Интерьер оценят ценители искусства</p>
+                <div class="extra">
+                    <i class="fas fa-check-circle"></i> Локации для ярких кадров
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ========== MENU ========== -->
+<!-- ===== MENU ===== -->
 <section class="section" id="menu">
     <div class="container">
-        <h2>Авторские блюда, коктейли и кальянные миксы</h2>
+        <h2>Авторские блюда и коктейли</h2>
         <p class="subtitle">Меню с фотографиями блюд</p>
         <div class="menu-grid">
             <div class="menu-item">
-                <img src="https://picsum.photos/seed/dish1/400/300" alt="Блюдо">
+                <img src="https://picsum.photos/seed/dish_a/400/300" alt="Блюдо" />
                 <div class="menu-item-content">
                     <h4>Тартар из говядины</h4>
                     <p>С муссом из сулугуни и пудрой из жженого порея</p>
@@ -753,7 +708,7 @@
                 </div>
             </div>
             <div class="menu-item">
-                <img src="https://picsum.photos/seed/dish2/400/300" alt="Блюдо">
+                <img src="https://picsum.photos/seed/dish_b/400/300" alt="Блюдо" />
                 <div class="menu-item-content">
                     <h4>Паста с оленем</h4>
                     <p>Из ржаной муки с оленем и брусникой</p>
@@ -762,20 +717,11 @@
                 </div>
             </div>
             <div class="menu-item">
-                <img src="https://picsum.photos/seed/dish3/400/300" alt="Блюдо">
+                <img src="https://picsum.photos/seed/dish_c/400/300" alt="Блюдо" />
                 <div class="menu-item-content">
                     <h4>Стейк из брокколи</h4>
                     <p>С кунжутным соусом</p>
                     <div class="price">750 ₽</div>
-                    <button class="btn btn-small">Заказать</button>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/seed/dish4/400/300" alt="Блюдо">
-                <div class="menu-item-content">
-                    <h4>Молодая капуста</h4>
-                    <p>С соусом из белых грибов</p>
-                    <div class="price">680 ₽</div>
                     <button class="btn btn-small">Заказать</button>
                 </div>
             </div>
@@ -786,107 +732,81 @@
     </div>
 </section>
 
-<!-- ========== GALLERY ========== -->
+<!-- ===== GALLERY ===== -->
 <section class="section" id="gallery">
     <div class="container">
         <h2>Интерьер и атмосфера</h2>
-        <p class="subtitle">Роскошный интерьер с элементами лофта и хай-тека</p>
+        <p class="subtitle">Свет, уют и стиль в каждой детали</p>
         <div class="gallery-grid">
-            <img src="https://picsum.photos/seed/hall1/500/400" alt="Зал 1">
-            <img src="https://picsum.photos/seed/hall2/500/400" alt="Зал 2">
-            <img src="https://picsum.photos/seed/hall3/500/400" alt="Зал 3">
-            <img src="https://picsum.photos/seed/hall4/500/400" alt="Зал 4">
+            <img src="https://picsum.photos/seed/light1/500/400" alt="Зал" />
+            <img src="https://picsum.photos/seed/light2/500/400" alt="Зал" />
+            <img src="https://picsum.photos/seed/light3/500/400" alt="Зал" />
+            <img src="https://picsum.photos/seed/light4/500/400" alt="Зал" />
         </div>
     </div>
 </section>
 
-<!-- ========== EVENTS ========== -->
-<section class="section" id="events">
-    <div class="container">
-        <h2>Ваше мероприятие в SOUL</h2>
-        <p class="subtitle">Корпоративы, свадьбы, юбилеи до 80 гостей</p>
-        <div class="events-grid">
-            <div class="event-card">
-                <i class="fas fa-users"></i>
-                <h4>Корпоратив</h4>
-                <p>Залы вместимостью до 20 и до 40 человек. Банкетное меню, авторские кальяны.</p>
-            </div>
-            <div class="event-card">
-                <i class="fas fa-ring"></i>
-                <h4>Свадьба</h4>
-                <p>Атмосферный интерьер, украшение зала, свадебный торт в подарок.</p>
-            </div>
-            <div class="event-card">
-                <i class="fas fa-birthday-cake"></i>
-                <h4>День рождения</h4>
-                <p>Имениннику — десерт и бокал шампанского, скидка 10% на общий счёт.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== REVIEWS ========== -->
+<!-- ===== REVIEWS ===== -->
 <section class="section" id="reviews">
     <div class="container">
-        <h2>Отзывы наших гостей</h2>
+        <h2>Отзывы гостей</h2>
         <p class="subtitle">Реальные впечатления о ресторанном доме SOUL</p>
         <div class="reviews-grid">
             <div class="review-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>«Провели свадьбу в зале «Сиреневый» — всё было на высшем уровне! Обслуживание, кухня, интерьер — безупречно. Гости в восторге.»</p>
+                <p>«Свадьба в «Сиреневом» — безупречно! Обслуживание, кухня, интерьер — всё на высшем уровне.»</p>
                 <div class="author">— Екатерина и Дмитрий</div>
             </div>
             <div class="review-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>«Отмечали корпоратив с караоке — это было невероятно! Отдельное спасибо за детскую комнату, наши сотрудники с детьми были спокойны.»</p>
+                <p>«Корпоратив с караоке прошёл на ура! Детская комната с аниматором — отдельное спасибо.»</p>
                 <div class="author">— ООО «Технологии»</div>
             </div>
             <div class="review-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>«Заказывали ужин для двоих с доставкой — очень вкусно и красиво оформлено! Превзошло ожидания, будем заказывать ещё.»</p>
+                <p>«Заказывали ужин для двоих — очень вкусно и красиво! Будем заказывать ещё.»</p>
                 <div class="author">— Анастасия</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ========== CONTACT & FORM ========== -->
+<!-- ===== CONTACT & FORM ===== -->
 <section class="section form-section" id="contact">
     <div class="container">
-        <h2>Забронируйте столик онлайн</h2>
-        <p class="subtitle">Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут</p>
+        <h2>Забронируйте столик</h2>
+        <p class="subtitle">Мы перезвоним в течение 15 минут</p>
         <div class="form-wrapper">
             <form action="#" method="POST">
-                <input type="date" placeholder="Дата">
-                <input type="time" placeholder="Время">
-                <input type="number" placeholder="Количество гостей" min="1">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Телефон" required>
+                <input type="date" placeholder="Дата" />
+                <input type="time" placeholder="Время" />
+                <input type="number" placeholder="Количество гостей" min="1" />
+                <input type="text" placeholder="Ваше имя" required />
+                <input type="tel" placeholder="Телефон" required />
                 <textarea placeholder="Комментарий (особые пожелания)"></textarea>
-                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Отправить</button>
             </form>
             <div class="contacts-info">
                 <h4>Контакты</h4>
-                <p><i class="fas fa-map-marker-alt"></i> г. Москва, Сиреневый бульвар, 25А, м. Щелковская</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, Сиреневый бульвар, 25А</p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:+74956747430">+7 (495) 674-74-30</a></p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:+79850932550">+7 (985) 093-25-50</a></p>
                 <p><i class="fas fa-clock"></i> Ежедневно с 12:00 до 23:00</p>
-                <p><i class="fas fa-clock"></i> Караоке: ПТ-СБ с 20:00 до 05:00</p>
-                <a href="https://wa.me/79850932550" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Написать в WhatsApp</a>
+                <a href="https://wa.me/79850932550" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
+<!-- ===== FOOTER ===== -->
 <footer>
     <div class="container">
         <p>&copy; 2026 <span>Ресторанный дом SOUL</span>. Все права защищены.</p>
-        <p style="margin-top: 8px; font-size: 0.8rem;">Создано с любовью для наших гостей.</p>
+        <p style="margin-top: 6px; font-size: 0.8rem;">Создано с любовью для наших гостей.</p>
     </div>
 </footer>
 
-<!-- ========== JAVASCRIPT ========== -->
+<!-- ===== JAVASCRIPT ===== -->
 <script>
     // Mobile menu toggle
     const toggle = document.getElementById('menuToggle');
@@ -898,7 +818,7 @@
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
@@ -908,21 +828,22 @@
         });
     });
 
-    // Simple form alert (demo)
+    // Demo form submit
     const form = document.querySelector('form');
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', function(e) {
         e.preventDefault();
         alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
         form.reset();
     });
 
-    // Menu buttons (demo)
+    // Menu order buttons (demo)
     document.querySelectorAll('.menu-item .btn').forEach(btn => {
-        btn.addEventListener('click', function (e) {
+        btn.addEventListener('click', function(e) {
             e.stopPropagation();
             alert('Товар добавлен в корзину (демо-режим)');
         });
     });
 </script>
+
 </body>
 </html>
