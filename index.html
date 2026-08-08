@@ -19,8 +19,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #f9f7fc;
-            color: #1e1a2b;
+            background: #fcf9f5;
+            color: #2c241b;
             line-height: 1.5;
         }
 
@@ -41,14 +41,14 @@
             font-size: 2.6rem;
             text-align: center;
             margin-bottom: 0.25rem;
-            color: #1e1a2b;
+            color: #2c241b;
         }
 
         .subtitle {
             text-align: center;
             font-weight: 300;
             font-size: 1.15rem;
-            color: #6b5f7a;
+            color: #8a7a6a;
             margin-bottom: 3rem;
         }
 
@@ -59,7 +59,7 @@
         /* ===== BUTTONS ===== */
         .btn {
             display: inline-block;
-            background: #7c3aed;
+            background: #c9a96e;
             color: #fff;
             padding: 14px 36px;
             border: none;
@@ -69,37 +69,37 @@
             letter-spacing: 0.3px;
             transition: all 0.25s ease;
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.25);
+            box-shadow: 0 4px 14px rgba(201, 169, 110, 0.30);
             text-decoration: none;
         }
 
         .btn:hover {
-            background: #6d28d9;
+            background: #b8925a;
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+            box-shadow: 0 8px 24px rgba(201, 169, 110, 0.40);
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid #7c3aed;
-            color: #7c3aed;
+            border: 2px solid #c9a96e;
+            color: #c9a96e;
             box-shadow: none;
         }
 
         .btn-outline:hover {
-            background: #7c3aed;
+            background: #c9a96e;
             color: #fff;
         }
 
         /* ===== HEADER ===== */
         header {
-            background: rgba(255, 255, 255, 0.80);
+            background: rgba(255, 252, 248, 0.88);
             backdrop-filter: blur(8px);
             padding: 14px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            border-bottom: 1px solid #ede9f5;
+            border-bottom: 1px solid #efe8e0;
         }
 
         .header-inner {
@@ -113,11 +113,11 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 700;
-            color: #1e1a2b;
+            color: #2c241b;
         }
 
         .logo span {
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         .nav-links {
@@ -129,17 +129,17 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #1e1a2b;
+            color: #2c241b;
             transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         .header-phone {
             font-weight: 500;
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         .header-phone i {
@@ -150,14 +150,14 @@
             display: none;
             font-size: 1.6rem;
             cursor: pointer;
-            color: #1e1a2b;
+            color: #2c241b;
         }
 
         /* ===== HERO ===== */
         .hero {
-            background: linear-gradient(145deg, #f3effa 0%, #ede7f7 100%);
+            background: linear-gradient(145deg, #f8f3ed 0%, #f2ebe3 100%);
             padding: 80px 0 70px;
-            border-bottom: 1px solid #e4ddf0;
+            border-bottom: 1px solid #e8dfd6;
         }
 
         .hero .container {
@@ -178,26 +178,26 @@
         }
 
         .hero-content h1 span {
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         .hero-content p {
             font-size: 1.1rem;
             font-weight: 300;
-            color: #3d3450;
+            color: #5a4d3e;
             margin-bottom: 28px;
             max-width: 480px;
         }
 
         .hero-badge {
-            background: rgba(124, 58, 237, 0.10);
-            border: 1px solid #c4b0e6;
+            background: rgba(201, 169, 110, 0.12);
+            border: 1px solid #dcccb8;
             display: inline-block;
             padding: 6px 20px;
             border-radius: 40px;
             font-size: 0.85rem;
             font-weight: 500;
-            color: #5b3b8c;
+            color: #8a7a6a;
             margin-bottom: 18px;
         }
 
@@ -209,11 +209,56 @@
         .hero-image img {
             max-width: 100%;
             border-radius: 28px;
-            box-shadow: 0 20px 50px rgba(124, 58, 237, 0.10);
-            border: 1px solid #e4ddf0;
+            box-shadow: 0 20px 50px rgba(201, 169, 110, 0.12);
+            border: 1px solid #e8dfd6;
         }
 
-        /* ===== EXPANDABLE FEATURES (аккордеон-галерея) ===== */
+        /* ===== ABOUT ===== */
+        .about-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            flex: 2 1 400px;
+        }
+
+        .about-text ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-text ul li {
+            margin-bottom: 12px;
+            font-weight: 300;
+            color: #5a4d3e;
+        }
+
+        .about-text ul li i {
+            color: #c9a96e;
+            margin-right: 15px;
+            width: 24px;
+        }
+
+        .about-image {
+            flex: 1 1 280px;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(201, 169, 110, 0.15);
+            border: 3px solid #efe8e0;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        /* ===== EXPANDABLE FEATURES ===== */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -225,8 +270,8 @@
             background: #ffffff;
             border-radius: 24px;
             padding: 24px 20px 20px;
-            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
-            border: 1px solid #ede9f5;
+            box-shadow: 0 4px 20px rgba(201, 169, 110, 0.06);
+            border: 1px solid #efe8e0;
             transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             cursor: default;
             display: flex;
@@ -239,14 +284,14 @@
 
         .feature-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 16px 48px rgba(124, 58, 237, 0.12);
-            border-color: #d4c4ee;
+            box-shadow: 0 16px 48px rgba(201, 169, 110, 0.12);
+            border-color: #dcccb8;
             min-height: 240px;
         }
 
         .feature-card .icon {
             font-size: 2.2rem;
-            color: #7c3aed;
+            color: #c9a96e;
             margin-bottom: 14px;
             transition: transform 0.3s ease;
         }
@@ -259,13 +304,13 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.2rem;
             font-weight: 600;
-            color: #1e1a2b;
+            color: #2c241b;
             margin-bottom: 6px;
         }
 
         .feature-card p {
             font-weight: 300;
-            color: #5f536e;
+            color: #8a7a6a;
             font-size: 0.95rem;
             line-height: 1.4;
             margin-bottom: 0;
@@ -278,7 +323,7 @@
             overflow: hidden;
             transition: all 0.4s ease;
             font-weight: 300;
-            color: #3d3450;
+            color: #5a4d3e;
             font-size: 0.9rem;
             margin-top: 0;
             line-height: 1.5;
@@ -291,11 +336,11 @@
         }
 
         .feature-card .extra i {
-            color: #7c3aed;
+            color: #c9a96e;
             margin-right: 6px;
         }
 
-        /* ===== MENU PREVIEW ===== */
+        /* ===== MENU ===== */
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -307,20 +352,20 @@
             background: #ffffff;
             border-radius: 24px;
             overflow: hidden;
-            border: 1px solid #ede9f5;
+            border: 1px solid #efe8e0;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .menu-item:hover {
             transform: scale(1.02);
-            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.08);
+            box-shadow: 0 12px 32px rgba(201, 169, 110, 0.08);
         }
 
         .menu-item img {
             width: 100%;
             height: 180px;
             object-fit: cover;
-            border-bottom: 1px solid #ede9f5;
+            border-bottom: 1px solid #efe8e0;
         }
 
         .menu-item-content {
@@ -330,12 +375,12 @@
         .menu-item-content h4 {
             font-family: 'Playfair Display', serif;
             font-size: 1.1rem;
-            color: #1e1a2b;
+            color: #2c241b;
             margin-bottom: 4px;
         }
 
         .menu-item-content p {
-            color: #5f536e;
+            color: #8a7a6a;
             font-weight: 300;
             font-size: 0.9rem;
         }
@@ -344,7 +389,7 @@
             font-weight: 700;
             font-size: 1.1rem;
             margin: 10px 0 12px;
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         .menu-item-content .btn {
@@ -367,13 +412,13 @@
             height: 230px;
             object-fit: cover;
             border-radius: 20px;
-            border: 1px solid #ede9f5;
+            border: 1px solid #efe8e0;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .gallery-grid img:hover {
             transform: scale(1.03);
-            box-shadow: 0 12px 32px rgba(124, 58, 237, 0.10);
+            box-shadow: 0 12px 32px rgba(201, 169, 110, 0.10);
         }
 
         /* ===== REVIEWS ===== */
@@ -388,8 +433,8 @@
             background: #ffffff;
             padding: 24px;
             border-radius: 24px;
-            border: 1px solid #ede9f5;
-            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.04);
+            border: 1px solid #efe8e0;
+            box-shadow: 0 4px 16px rgba(201, 169, 110, 0.04);
         }
 
         .review-card .stars {
@@ -400,20 +445,20 @@
         .review-card p {
             font-style: italic;
             font-weight: 300;
-            color: #2d253a;
+            color: #3d342b;
         }
 
         .review-card .author {
             font-weight: 500;
             margin-top: 14px;
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         /* ===== FORM ===== */
         .form-section {
-            background: #f3effa;
-            border-top: 1px solid #e4ddf0;
-            border-bottom: 1px solid #e4ddf0;
+            background: #f8f3ed;
+            border-top: 1px solid #e8dfd6;
+            border-bottom: 1px solid #e8dfd6;
         }
 
         .form-wrapper {
@@ -434,10 +479,10 @@
         .form-wrapper form textarea,
         .form-wrapper form select {
             padding: 14px 18px;
-            border: 1px solid #dcd4ea;
+            border: 1px solid #dcccb8;
             border-radius: 16px;
             background: #ffffff;
-            color: #1e1a2b;
+            color: #2c241b;
             font-size: 1rem;
             transition: border 0.2s;
         }
@@ -446,8 +491,8 @@
         .form-wrapper form textarea:focus,
         .form-wrapper form select:focus {
             outline: none;
-            border-color: #7c3aed;
-            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08);
+            border-color: #c9a96e;
+            box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.08);
         }
 
         .form-wrapper form textarea {
@@ -463,23 +508,23 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             margin-bottom: 18px;
-            color: #1e1a2b;
+            color: #2c241b;
         }
 
         .contacts-info p {
             margin-bottom: 12px;
             font-weight: 300;
-            color: #3d3450;
+            color: #5a4d3e;
         }
 
         .contacts-info i {
-            color: #7c3aed;
+            color: #c9a96e;
             margin-right: 12px;
             width: 22px;
         }
 
         .contacts-info a {
-            color: #7c3aed;
+            color: #c9a96e;
             text-decoration: none;
         }
 
@@ -501,16 +546,16 @@
         /* ===== FOOTER ===== */
         footer {
             background: #ffffff;
-            color: #5f536e;
+            color: #8a7a6a;
             padding: 28px 0;
             text-align: center;
             font-weight: 300;
             font-size: 0.9rem;
-            border-top: 1px solid #ede9f5;
+            border-top: 1px solid #efe8e0;
         }
 
         footer span {
-            color: #7c3aed;
+            color: #c9a96e;
         }
 
         /* ===== RESPONSIVE ===== */
@@ -573,6 +618,19 @@
             .feature-card:hover {
                 min-height: 200px;
             }
+
+            .about-grid {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text ul {
+                text-align: left;
+            }
+
+            .about-image img {
+                max-width: 220px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -595,6 +653,7 @@
     <div class="container header-inner">
         <div class="logo">SOUL <span>•</span></div>
         <ul class="nav-links" id="navLinks">
+            <li><a href="#about">О нас</a></li>
             <li><a href="#features">Опции</a></li>
             <li><a href="#menu">Меню</a></li>
             <li><a href="#gallery">Галерея</a></li>
@@ -625,14 +684,36 @@
     </div>
 </section>
 
-<!-- ===== EXPANDABLE FEATURES (аккордеон-галерея) ===== -->
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+    <div class="container">
+        <h2>О ресторанном доме</h2>
+        <p class="subtitle">Авторская кухня и душевная атмосфера</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <ul>
+                    <li><i class="fas fa-chandelier"></i> Банкетный зал «Сиреневый» — до 100 человек</li>
+                    <li><i class="fas fa-music"></i> Зал «SHUM» для шумных вечеринок</li>
+                    <li><i class="fas fa-microphone-alt"></i> KARAOKE &amp; LOUNGE — продолжение вечера</li>
+                    <li><i class="fas fa-child"></i> Детская комната с аниматором</li>
+                    <li><i class="fas fa-chef"></i> Авторская кухня от шеф-повара Борисенко Бориса Олеговича</li>
+                </ul>
+                <p style="margin-top: 20px; color: #5a4d3e;">Один комплекс — любые форматы: от камерного ужина до свадьбы на 100 человек.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/0463167a50a3cf61c031615d290b953c9345e5c9/images/4B1A8318.jpg" alt="Шеф-повар Борисенко Борис Олегович" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EXPANDABLE FEATURES ===== -->
 <section class="section" id="features">
     <div class="container">
         <h2>Весь набор опций для приятного отдыха</h2>
         <p class="subtitle">Вдохновение, комфорт и яркие впечатления в каждой детали</p>
 
         <div class="features-grid">
-            <!-- Карточка 1 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-couch"></i></div>
                 <h4>Изолированные лаунж-зоны</h4>
@@ -641,7 +722,6 @@
                     <i class="fas fa-check-circle"></i> Зоны для встреч и релакса
                 </div>
             </div>
-            <!-- Карточка 2 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-utensil-spoon"></i></div>
                 <h4>Авторские блюда</h4>
@@ -650,7 +730,6 @@
                     <i class="fas fa-check-circle"></i> Сезонное меню от шефа
                 </div>
             </div>
-            <!-- Карточка 3 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-glass-cheers"></i></div>
                 <h4>Полноценный бар</h4>
@@ -659,7 +738,6 @@
                     <i class="fas fa-check-circle"></i> Авторские коктейли и классика
                 </div>
             </div>
-            <!-- Карточка 4 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-smoking"></i></div>
                 <h4>Кальянная карта</h4>
@@ -668,7 +746,6 @@
                     <i class="fas fa-check-circle"></i> Индивидуальный подход
                 </div>
             </div>
-            <!-- Карточка 5 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-gamepad"></i></div>
                 <h4>PS4 и настольные игры</h4>
@@ -677,7 +754,6 @@
                     <i class="fas fa-check-circle"></i> Весело и без скуки
                 </div>
             </div>
-            <!-- Карточка 6 -->
             <div class="feature-card">
                 <div class="icon"><i class="fas fa-camera"></i></div>
                 <h4>Хороший свет для фото</h4>
