@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ресторанный дом SOUL – Банкеты, доставка, акции</title>
+    <title>Ресторанный дом SOUL</title>
     <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             color: #e0e0e0;
-            background: #121212;
+            background: #0a0a0a;
             line-height: 1.6;
         }
 
@@ -59,7 +59,7 @@
 
         .section {
             padding: 70px 0;
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: 1px solid #1a1a1a;
         }
 
         .section:last-of-type {
@@ -70,7 +70,7 @@
         .btn {
             display: inline-block;
             background: #c9a96e;
-            color: #121212;
+            color: #0a0a0a;
             padding: 16px 40px;
             border: none;
             border-radius: 50px;
@@ -98,7 +98,7 @@
 
         .btn-outline:hover {
             background: #c9a96e;
-            color: #121212;
+            color: #0a0a0a;
         }
 
         .btn-small {
@@ -108,14 +108,14 @@
 
         /* ========== HEADER ========== */
         header {
-            background: #1a1a1a;
+            background: rgba(10, 10, 10, 0.95);
             padding: 15px 0;
             color: #e0e0e0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.5);
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: 1px solid #1a1a1a;
+            backdrop-filter: blur(10px);
         }
 
         .header-inner {
@@ -170,12 +170,12 @@
 
         /* ========== HERO ========== */
         .hero {
-            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             color: #f5f0eb;
             padding: 100px 0 80px;
             position: relative;
             overflow: hidden;
-            border-bottom: 1px solid #2a2a2a;
+            border-bottom: 1px solid #1a1a1a;
         }
 
         .hero::after {
@@ -243,124 +243,7 @@
             max-width: 100%;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-            border: 1px solid #2a2a2a;
-        }
-
-        /* ========== OFFERS (акции) ========== */
-        .offers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .offer-card {
-            background: #1e1e1e;
-            border-radius: 20px;
-            padding: 30px 25px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 4px solid #c9a96e;
-        }
-
-        .offer-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-        }
-
-        .offer-card i {
-            font-size: 2.5rem;
-            color: #c9a96e;
-            margin-bottom: 15px;
-        }
-
-        .offer-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #f5f0eb;
-        }
-
-        .offer-card p {
-            color: #b0b0b0;
-        }
-
-        .offer-card .price {
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: #c9a96e;
-            margin: 15px 0;
-        }
-
-        .offer-card .price small {
-            font-weight: 300;
-            font-size: 1rem;
-            color: #888;
-        }
-
-        /* ========== SHOP (магазин готовых блюд) ========== */
-        .shop-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .shop-item {
-            background: #1e1e1e;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #2a2a2a;
-        }
-
-        .shop-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .shop-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #2a2a2a;
-        }
-
-        .shop-item-content {
-            padding: 20px;
-        }
-
-        .shop-item-content h4 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-            color: #f5f0eb;
-        }
-
-        .shop-item-content .category {
-            font-size: 0.8rem;
-            color: #c9a96e;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 500;
-        }
-
-        .shop-item-content p {
-            color: #b0b0b0;
-            font-weight: 300;
-        }
-
-        .shop-item-content .price {
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin: 10px 0;
-            color: #f5f0eb;
-        }
-
-        .shop-item-content .btn {
-            padding: 8px 20px;
-            font-size: 0.8rem;
-            width: 100%;
-            text-align: center;
+            border: 1px solid #1a1a1a;
         }
 
         /* ========== ABOUT ========== */
@@ -401,7 +284,105 @@
             width: 100%;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #1a1a1a;
+        }
+
+        /* ========== FEATURES ========== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            background: #1a1a1a;
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-align: center;
             border: 1px solid #2a2a2a;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: #c9a96e;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #f5f0eb;
+        }
+
+        .feature-item p {
+            font-weight: 300;
+            color: #a0a0a0;
+            font-size: 0.95rem;
+        }
+
+        /* ========== MENU PREVIEW ========== */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background: #1a1a1a;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .menu-item-content {
+            padding: 20px;
+        }
+
+        .menu-item-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #f5f0eb;
+        }
+
+        .menu-item-content p {
+            color: #b0b0b0;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        .menu-item-content .price {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #c9a96e;
+        }
+
+        .menu-item-content .btn {
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            width: 100%;
+            text-align: center;
         }
 
         /* ========== GALLERY ========== */
@@ -418,7 +399,6 @@
             object-fit: cover;
             border-radius: 15px;
             transition: transform 0.4s, box-shadow 0.4s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
             border: 1px solid #2a2a2a;
         }
 
@@ -427,30 +407,42 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
-        /* ========== REASONS ========== */
-        .reasons-grid {
+        /* ========== EVENTS ========== */
+        .events-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            text-align: center;
             margin-top: 30px;
         }
 
-        .reason-item i {
-            font-size: 3rem;
+        .event-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #2a2a2a;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .event-card i {
+            font-size: 2.5rem;
             color: #c9a96e;
             margin-bottom: 15px;
         }
 
-        .reason-item h4 {
+        .event-card h4 {
             font-size: 1.3rem;
-            margin-bottom: 8px;
             color: #f5f0eb;
+            margin-bottom: 10px;
         }
 
-        .reason-item p {
+        .event-card p {
+            color: #b0b0b0;
             font-weight: 300;
-            color: #a0a0a0;
         }
 
         /* ========== REVIEWS ========== */
@@ -462,10 +454,9 @@
         }
 
         .review-card {
-            background: #1e1e1e;
+            background: #1a1a1a;
             padding: 25px;
             border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
             border: 1px solid #2a2a2a;
         }
 
@@ -488,18 +479,9 @@
 
         /* ========== FORM ========== */
         .form-section {
-            background: #0d0d0d;
-            color: #e0e0e0;
-            border-top: 1px solid #2a2a2a;
-            border-bottom: 1px solid #2a2a2a;
-        }
-
-        .form-section h2 {
-            color: #f5f0eb;
-        }
-
-        .form-section .subtitle {
-            color: #a0a0a0;
+            background: #0a0a0a;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
         }
 
         .form-wrapper {
@@ -517,7 +499,8 @@
         }
 
         .form-wrapper form input,
-        .form-wrapper form textarea {
+        .form-wrapper form textarea,
+        .form-wrapper form select {
             padding: 15px 20px;
             border: 1px solid #333;
             border-radius: 10px;
@@ -528,7 +511,8 @@
         }
 
         .form-wrapper form input:focus,
-        .form-wrapper form textarea:focus {
+        .form-wrapper form textarea:focus,
+        .form-wrapper form select:focus {
             outline: none;
             border-color: #c9a96e;
         }
@@ -569,7 +553,7 @@
             background: #25d366;
             padding: 10px 25px;
             border-radius: 50px;
-            color: #121212;
+            color: #0a0a0a;
             font-weight: 500;
             margin-top: 10px;
             transition: background 0.3s;
@@ -581,13 +565,13 @@
 
         /* ========== FOOTER ========== */
         footer {
-            background: #0d0d0d;
+            background: #0a0a0a;
             color: #888;
             padding: 30px 0;
             text-align: center;
             font-weight: 300;
             font-size: 0.9rem;
-            border-top: 1px solid #2a2a2a;
+            border-top: 1px solid #1a1a1a;
         }
 
         footer span {
@@ -648,10 +632,6 @@
                 width: 100%;
                 text-align: center;
             }
-
-            .offer-card, .shop-item {
-                padding: 15px;
-            }
         }
     </style>
 </head>
@@ -662,10 +642,11 @@
     <div class="container header-inner">
         <div class="logo">SOUL <span>•</span></div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#offers">Акции</a></li>
-            <li><a href="#shop">Готовые блюда</a></li>
             <li><a href="#about">О нас</a></li>
+            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#menu">Меню</a></li>
             <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#events">Мероприятия</a></li>
             <li><a href="#reviews">Отзывы</a></li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
@@ -682,104 +663,13 @@
 <section class="hero">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-badge"><i class="fas fa-fire"></i> Спецпредложение до 31 декабря</div>
-            <h1>Идеальный банкет <br>в <span>ресторанном доме</span> SOUL</h1>
-            <p>Просторные залы, авторская кухня, караоке и детская комната — всё для вашего праздника со скидкой до 30%.</p>
-            <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i> Забронировать банкет</a>
+            <div class="hero-badge"><i class="fas fa-fire"></i> Лаундж-ресторан в самом сердце Москвы</div>
+            <h1>Ресторанный дом <span>SOUL</span></h1>
+            <p>2 этажа с атмосферным дизайном. Авторская кухня, караоке, лаунж-зоны и полноценная барная карта.</p>
+            <a href="#contact" class="btn"><i class="fas fa-calendar-check"></i> Забронировать столик</a>
         </div>
         <div class="hero-image">
-            <img src="https://picsum.photos/seed/restaurant/600/400" alt="Банкетный зал SOUL">
-        </div>
-    </div>
-</section>
-
-<!-- ========== OFFERS (Акции) ========== -->
-<section class="section" id="offers">
-    <div class="container">
-        <h2>Выберите своё предложение</h2>
-        <p class="subtitle">Специальные пакеты для вашего праздника</p>
-        <div class="offers-grid">
-            <div class="offer-card">
-                <i class="fas fa-ring"></i>
-                <h3>Свадебный пакет</h3>
-                <p>Романтичная свадьба с украшением зала, свадебным тортом и бокалами для молодожёнов в подарок.</p>
-                <div class="price">от 3 500 ₽ <small>/чел.</small></div>
-                <a href="#contact" class="btn btn-small">Забронировать</a>
-            </div>
-            <div class="offer-card">
-                <i class="fas fa-users"></i>
-                <h3>Корпоратив со скидкой</h3>
-                <p>При заказе от 20 человек — скидка 15% на меню и аренду караоке-зоны.</p>
-                <div class="price">от 3 000 ₽ <small>/чел.</small></div>
-                <a href="#contact" class="btn btn-small">Забронировать</a>
-            </div>
-            <div class="offer-card">
-                <i class="fas fa-birthday-cake"></i>
-                <h3>День рождения в SOUL</h3>
-                <p>Имениннику — десерт и бокал шампанского в подарок, скидка 10% на общий счёт.</p>
-                <div class="price">от 2 800 ₽ <small>/чел.</small></div>
-                <a href="#contact" class="btn btn-small">Забронировать</a>
-            </div>
-            <div class="offer-card">
-                <i class="fas fa-utensils"></i>
-                <h3>Комбо: Ужин + Караоке</h3>
-                <p>Закажите ужин из нашего магазина и получите промокод на скидку 10% на аренду караоке.</p>
-                <div class="price">—</div>
-                <a href="#shop" class="btn btn-small btn-outline">В магазин</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== SHOP (Магазин готовых блюд) ========== -->
-<section class="section" id="shop">
-    <div class="container">
-        <h2>Ресторанная кухня у вас дома</h2>
-        <p class="subtitle">Те же изысканные блюда от шеф-повара с доставкой</p>
-        <div class="shop-grid">
-            <div class="shop-item">
-                <img src="https://picsum.photos/seed/lunch/400/300" alt="Бизнес-ланч">
-                <div class="shop-item-content">
-                    <span class="category">🥗 Бизнес-ланч</span>
-                    <h4>Куриная грудка с киноа</h4>
-                    <p>Сбалансированный обед для офиса</p>
-                    <div class="price">590 ₽</div>
-                    <button class="btn btn-small">Заказать</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <img src="https://picsum.photos/seed/dinner/400/300" alt="Ужин для двоих">
-                <div class="shop-item-content">
-                    <span class="category">🍷 Ужин для двоих</span>
-                    <h4>Стейк с соусом Демиглас</h4>
-                    <p>Идеальный романтический ужин</p>
-                    <div class="price">1 890 ₽</div>
-                    <button class="btn btn-small">Заказать</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <img src="https://picsum.photos/seed/banquet/400/300" alt="Банкетный набор">
-                <div class="shop-item-content">
-                    <span class="category">🍾 Банкетный набор</span>
-                    <h4>Набор на 6 персон</h4>
-                    <p>Холодные закуски, горячее, десерты</p>
-                    <div class="price">4 500 ₽</div>
-                    <button class="btn btn-small">Заказать</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <img src="https://picsum.photos/seed/dessert/400/300" alt="Десерты">
-                <div class="shop-item-content">
-                    <span class="category">🍰 Десерты</span>
-                    <h4>Торт «Прага»</h4>
-                    <p>Фирменный десерт от шефа</p>
-                    <div class="price">750 ₽</div>
-                    <button class="btn btn-small">Заказать</button>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="#" class="btn btn-outline">Смотреть всё меню</a>
+            <img src="https://picsum.photos/seed/restaurant/600/400" alt="Ресторанный дом SOUL">
         </div>
     </div>
 </section>
@@ -787,8 +677,8 @@
 <!-- ========== ABOUT ========== -->
 <section class="section" id="about">
     <div class="container">
-        <h2>Пространство для вашего праздника</h2>
-        <p class="subtitle">Ресторанный дом SOUL — уют и изысканность в каждой детали</p>
+        <h2>О ресторанном доме</h2>
+        <p class="subtitle">Пространство для вашего идеального отдыха</p>
         <div class="about-grid">
             <div class="about-text">
                 <ul>
@@ -796,7 +686,7 @@
                     <li><i class="fas fa-music"></i> Зал «SHUM» для шумных вечеринок</li>
                     <li><i class="fas fa-microphone-alt"></i> KARAOKE & LOUNGE — продолжение вечера</li>
                     <li><i class="fas fa-child"></i> Детская комната с аниматором</li>
-                    <li><i class="fas fa-chef"></i> Авторская кухня от шеф-повара</li>
+                    <li><i class="fas fa-chef"></i> Авторская кухня от шеф-повара Борисенко Бориса Олеговича</li>
                 </ul>
                 <p style="margin-top: 20px; color: #b0b0b0;">Один комплекс — любые форматы: от камерного ужина до свадьбы на 100 человек.</p>
             </div>
@@ -807,11 +697,100 @@
     </div>
 </section>
 
+<!-- ========== FEATURES ========== -->
+<section class="section" id="features">
+    <div class="container">
+        <h2>Весь набор опций для приятного отдыха</h2>
+        <p class="subtitle">Всё, что нужно для идеального вечера</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-couch"></i>
+                <h4>Изолированные лаунж-зоны</h4>
+                <p>Уединение и отдых от суеты будней</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-utensil-spoon"></i>
+                <h4>Авторские блюда</h4>
+                <p>Wow-впечатления, вкусно, фотогенично</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-glass-cheers"></i>
+                <h4>Полноценный бар</h4>
+                <p>Коктейли, вино, крепкий алкоголь</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-smoking"></i>
+                <h4>Кальянная карта</h4>
+                <p>200+ миксов, премиум-бренды</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-gamepad"></i>
+                <h4>PS4 и настольные игры</h4>
+                <p>Отдых компанией, общение, знакомства</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-camera"></i>
+                <h4>Хороший свет для фото</h4>
+                <p>Интерьер оценят ценители искусства</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== MENU ========== -->
+<section class="section" id="menu">
+    <div class="container">
+        <h2>Авторские блюда, коктейли и кальянные миксы</h2>
+        <p class="subtitle">Меню с фотографиями блюд</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://picsum.photos/seed/dish1/400/300" alt="Блюдо">
+                <div class="menu-item-content">
+                    <h4>Тартар из говядины</h4>
+                    <p>С муссом из сулугуни и пудрой из жженого порея</p>
+                    <div class="price">890 ₽</div>
+                    <button class="btn btn-small">Заказать</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/seed/dish2/400/300" alt="Блюдо">
+                <div class="menu-item-content">
+                    <h4>Паста с оленем</h4>
+                    <p>Из ржаной муки с оленем и брусникой</p>
+                    <div class="price">1 250 ₽</div>
+                    <button class="btn btn-small">Заказать</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/seed/dish3/400/300" alt="Блюдо">
+                <div class="menu-item-content">
+                    <h4>Стейк из брокколи</h4>
+                    <p>С кунжутным соусом</p>
+                    <div class="price">750 ₽</div>
+                    <button class="btn btn-small">Заказать</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://picsum.photos/seed/dish4/400/300" alt="Блюдо">
+                <div class="menu-item-content">
+                    <h4>Молодая капуста</h4>
+                    <p>С соусом из белых грибов</p>
+                    <div class="price">680 ₽</div>
+                    <button class="btn btn-small">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="#" class="btn btn-outline">Смотреть всё меню</a>
+        </div>
+    </div>
+</section>
+
 <!-- ========== GALLERY ========== -->
 <section class="section" id="gallery">
     <div class="container">
-        <h2>Фотографии интерьеров</h2>
-        <p class="subtitle">Вдохновитесь атмосферой наших залов</p>
+        <h2>Интерьер и атмосфера</h2>
+        <p class="subtitle">Роскошный интерьер с элементами лофта и хай-тека</p>
         <div class="gallery-grid">
             <img src="https://picsum.photos/seed/hall1/500/400" alt="Зал 1">
             <img src="https://picsum.photos/seed/hall2/500/400" alt="Зал 2">
@@ -821,31 +800,26 @@
     </div>
 </section>
 
-<!-- ========== REASONS ========== -->
-<section class="section" id="reasons">
+<!-- ========== EVENTS ========== -->
+<section class="section" id="events">
     <div class="container">
-        <h2>Почему выбирают SOUL</h2>
-        <p class="subtitle">4 преимущества, которые делают ваш праздник особенным</p>
-        <div class="reasons-grid">
-            <div class="reason-item">
-                <i class="fas fa-building"></i>
-                <h4>Универсальность</h4>
-                <p>Один комплекс — любые форматы мероприятий</p>
-            </div>
-            <div class="reason-item">
-                <i class="fas fa-utensil-spoon"></i>
-                <h4>Вкусная кухня</h4>
-                <p>Авторские блюда от шеф-повара</p>
-            </div>
-            <div class="reason-item">
+        <h2>Ваше мероприятие в SOUL</h2>
+        <p class="subtitle">Корпоративы, свадьбы, юбилеи до 80 гостей</p>
+        <div class="events-grid">
+            <div class="event-card">
                 <i class="fas fa-users"></i>
-                <h4>Комфорт для всех</h4>
-                <p>Детская комната с аниматором</p>
+                <h4>Корпоратив</h4>
+                <p>Залы вместимостью до 20 и до 40 человек. Банкетное меню, авторские кальяны.</p>
             </div>
-            <div class="reason-item">
-                <i class="fas fa-tags"></i>
-                <h4>Выгодные акции</h4>
-                <p>Постоянные скидки и спецпредложения</p>
+            <div class="event-card">
+                <i class="fas fa-ring"></i>
+                <h4>Свадьба</h4>
+                <p>Атмосферный интерьер, украшение зала, свадебный торт в подарок.</p>
+            </div>
+            <div class="event-card">
+                <i class="fas fa-birthday-cake"></i>
+                <h4>День рождения</h4>
+                <p>Имениннику — десерт и бокал шампанского, скидка 10% на общий счёт.</p>
             </div>
         </div>
     </div>
@@ -879,23 +853,25 @@
 <!-- ========== CONTACT & FORM ========== -->
 <section class="section form-section" id="contact">
     <div class="container">
-        <h2>Забронируйте банкет прямо сейчас</h2>
+        <h2>Забронируйте столик онлайн</h2>
         <p class="subtitle">Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут</p>
         <div class="form-wrapper">
             <form action="#" method="POST">
+                <input type="date" placeholder="Дата">
+                <input type="time" placeholder="Время">
+                <input type="number" placeholder="Количество гостей" min="1">
                 <input type="text" placeholder="Ваше имя" required>
                 <input type="tel" placeholder="Телефон" required>
-                <input type="date" placeholder="Желаемая дата">
-                <input type="number" placeholder="Количество гостей" min="1">
                 <textarea placeholder="Комментарий (особые пожелания)"></textarea>
                 <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
             </form>
             <div class="contacts-info">
                 <h4>Контакты</h4>
-                <p><i class="fas fa-map-marker-alt"></i> г. Москва, м. Щелковская, Сиреневый бульвар, 25А</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, Сиреневый бульвар, 25А, м. Щелковская</p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:+74956747430">+7 (495) 674-74-30</a></p>
                 <p><i class="fas fa-phone-alt"></i> <a href="tel:+79850932550">+7 (985) 093-25-50</a></p>
                 <p><i class="fas fa-clock"></i> Ежедневно с 12:00 до 23:00</p>
+                <p><i class="fas fa-clock"></i> Караоке: ПТ-СБ с 20:00 до 05:00</p>
                 <a href="https://wa.me/79850932550" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Написать в WhatsApp</a>
             </div>
         </div>
@@ -927,7 +903,6 @@
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Close mobile menu if open
                 nav.classList.remove('active');
             }
         });
@@ -941,8 +916,8 @@
         form.reset();
     });
 
-    // Shop buttons (demo)
-    document.querySelectorAll('.shop-item .btn').forEach(btn => {
+    // Menu buttons (demo)
+    document.querySelectorAll('.menu-item .btn').forEach(btn => {
         btn.addEventListener('click', function (e) {
             e.stopPropagation();
             alert('Товар добавлен в корзину (демо-режим)');
