@@ -1,0 +1,62 @@
+<!-- SOUL dark premium landing for Tilda T123 — responsive v2 -->
+<style>
+#soul{--bg:#080808;--card:#11100f;--gold:#d5ad5b;--gold2:#f0cf83;--text:#f7f2e8;--muted:#aaa296;width:100%;max-width:100%;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;overflow-x:clip;line-height:1.4}
+#soul,#soul *{box-sizing:border-box}
+#soul a{text-decoration:none;color:inherit}
+#soul img{max-width:100%;height:auto}
+.s-wrap{width:min(1180px,100%);margin:0 auto;padding:0 24px}
+.s-hero{min-height:720px;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.45fr);align-items:center;gap:44px;padding:70px 24px;background:radial-gradient(circle at 75% 45%,#3b2a12 0,transparent 35%),linear-gradient(110deg,#050505,#0d0b08)}
+.s-hero>.s-wrap{width:100%;max-width:1180px;padding:0;justify-self:end}
+.s-logo{font:300 clamp(42px,5vw,58px)/1 Arial;letter-spacing:clamp(4px,1vw,7px)}
+.s-kicker{color:var(--gold);letter-spacing:clamp(3px,1vw,5px);text-transform:uppercase;font-size:13px;margin:10px 0 clamp(28px,5vw,55px)}
+.s-hero h1{font:400 clamp(36px,4.5vw,54px)/1.08 Georgia,serif;margin:0 0 22px}
+.s-hero h1 span,.s-title span{color:var(--gold2)}
+.s-lead{color:#d3cdc2;font-size:clamp(16px,1.6vw,18px);line-height:1.6;max-width:500px;margin:0}
+.s-btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.s-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 25px;border:1px solid var(--gold);background:var(--gold);color:#100d08!important;border-radius:2px;font-size:13px;text-transform:uppercase;letter-spacing:.7px;text-align:center;cursor:pointer}
+.s-btn.alt{background:transparent;color:var(--gold2)!important}
+.s-hero-img{width:100%;height:min(610px,70vh);min-height:420px;background:linear-gradient(90deg,rgba(0,0,0,.15),rgba(0,0,0,0)),url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/4B1A8318.jpg') center/cover;border:1px solid #6d5425;box-shadow:0 30px 90px #000;border-radius:2px}
+.s-section{padding:clamp(55px,7vw,85px) 0}
+.s-title{text-align:center;font:400 clamp(30px,4vw,38px)/1.15 Georgia,serif;margin:0 0 12px}
+.s-sub{text-align:center;color:var(--muted);margin:0 auto 42px;max-width:650px;line-height:1.55}
+.s-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.s-card{min-height:430px;position:relative;display:flex;align-items:end;padding:28px;background:#15120f center/cover;border:1px solid #5c471f;overflow:hidden}
+.s-card:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(0,0,0,.92) 92%)}
+.s-card>*{position:relative;z-index:2}.s-card h3{font:400 clamp(26px,3vw,30px)/1.15 Georgia,serif;margin:0 0 8px}.s-card p{color:#c8c1b5;line-height:1.5;margin:0}
+.s-card:nth-child(1){background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo001.jpg')}.s-card:nth-child(2){background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/banket/Photo085.jpg')}.s-card:nth-child(3){background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo022.jpg')}
+.s-features{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid #302716;border-bottom:1px solid #302716}
+.s-feature{padding:28px 14px;text-align:center;border-right:1px solid #302716}.s-feature:last-child{border:0}.s-feature b{display:block;color:var(--gold2);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}.s-feature span{font-size:13px;color:#a9a296;line-height:1.4}
+.s-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:240px;gap:12px}.s-gallery div{background:center/cover;border:1px solid #3d301b;min-width:0}.s-gallery .big{grid-row:span 2;background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo012.jpg')}.g2{background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/banket/Photo057.jpg')}.g3{background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/banket/Photo061.jpg')}.g4{background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo021.jpg')}.g5{background-image:url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo015.jpg')}
+.s-cta{margin-top:80px;padding:70px;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.35)),url('https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/restoran/Photo022.jpg') center/cover;border:1px solid #5b451d}.s-cta h2{text-align:left;font:400 clamp(32px,4vw,42px)/1.12 Georgia,serif;max-width:620px;margin:0}.s-cta p{color:#c8c1b5;max-width:540px;line-height:1.6;margin:18px 0 0}
+.s-footer{padding:32px 0;border-top:1px solid #302716;color:#aaa296;font-size:13px}.s-footer strong{color:var(--gold2)}
+
+@media(max-width:1000px){
+ .s-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;padding:55px 20px}
+ .s-hero-img{height:520px;min-height:0}
+ .s-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.s-card:last-child{grid-column:1/-1}
+ .s-features{grid-template-columns:repeat(3,minmax(0,1fr))}.s-feature:nth-child(3n){border-right:0}.s-feature:nth-child(n+4){border-top:1px solid #302716}
+ .s-gallery{grid-template-columns:2fr 1fr;grid-auto-rows:210px}.s-gallery .big{grid-row:span 2}.g5{grid-column:2}
+}
+@media(max-width:700px){
+ .s-wrap{padding:0 18px}
+ .s-hero{display:flex;flex-direction:column;align-items:stretch;gap:30px;min-height:0;padding:42px 18px 55px}
+ .s-hero>.s-wrap{order:1}.s-hero-img{order:2;height:58vw;min-height:300px;max-height:430px;box-shadow:0 20px 50px #000}
+ .s-kicker{margin-bottom:30px}.s-hero h1{margin-bottom:18px}.s-lead{max-width:none}
+ .s-btns{gap:10px;margin-top:26px}.s-btn{flex:1 1 210px;width:100%;padding:14px 16px}
+ .s-cards{grid-template-columns:1fr}.s-card,.s-card:last-child{grid-column:auto;min-height:390px}
+ .s-features{grid-template-columns:1fr 1fr}.s-feature{padding:22px 10px;border-right:1px solid #302716!important}.s-feature:nth-child(2n){border-right:0!important}.s-feature:nth-child(n+3){border-top:1px solid #302716}
+ .s-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:8px}.s-gallery .big{grid-column:1/-1;grid-row:span 1;height:240px}.g5{grid-column:auto}
+ .s-cta{margin-top:50px;padding:40px 22px}.s-cta h2{text-align:left}.s-footer{padding:26px 0}.s-footer .s-wrap{line-height:1.7}
+}
+@media(max-width:420px){
+ .s-hero{padding:34px 15px 45px}.s-wrap{padding:0 15px}.s-logo{font-size:40px}.s-kicker{font-size:11px;letter-spacing:3px}.s-hero h1{font-size:34px}.s-lead{font-size:15px}.s-hero-img{height:300px;min-height:300px}
+ .s-section{padding:48px 0}.s-title{font-size:28px}.s-sub{font-size:14px;margin-bottom:30px}.s-card{min-height:340px;padding:22px}.s-feature{padding:19px 8px}.s-feature b{font-size:10px}.s-feature span{font-size:12px}.s-gallery{grid-auto-rows:145px}.s-gallery .big{height:210px}.s-cta{padding:34px 18px}.s-cta p{font-size:14px}
+}
+</style>
+<div id="soul">
+<section class="s-hero"><div class="s-wrap"><div class="s-logo">SOUL</div><div class="s-kicker">Ресторанный дом</div><h1>ТРИ ФОРМАТА<br><span>ОДНА АТМОСФЕРА</span></h1><p class="s-lead">Ресторан, банкетный зал и караоке-лаунж — для ужина, праздника, корпоратива или вечера с друзьями.</p><div class="s-btns"><a class="s-btn" href="#booking">Забронировать стол</a><a class="s-btn alt" href="#booking">Заказать мероприятие</a></div></div><div class="s-hero-img"></div></section>
+<section class="s-section"><div class="s-wrap"><h2 class="s-title">ВЫБЕРИТЕ <span>СВОЙ ФОРМАТ</span></h2><p class="s-sub">Три пространства в одном ресторанном доме. Выбирайте настроение — остальное мы возьмём на себя.</p><div class="s-cards"><article class="s-card"><div><h3>SOUL</h3><p>Ресторан. Авторская кухня, стильный интерьер и атмосфера для особенного вечера.</p></div></article><article class="s-card"><div><h3>Сиреневый</h3><p>Банкетный зал. Свадьбы, юбилеи, корпоративы и торжества с красивой подачей.</p></div></article><article class="s-card"><div><h3>SHUM</h3><p>Караоке & Lounge. Музыка, приватность и настроение для вашей компании.</p></div></article></div></div></section>
+<section class="s-section" style="padding-top:0"><div class="s-wrap"><div class="s-features"><div class="s-feature"><b>Вкусная кухня</b><span>Авторские блюда и свежие продукты</span></div><div class="s-feature"><b>Любые события</b><span>Дни рождения, свадьбы, корпоративы</span></div><div class="s-feature"><b>Караоке & Lounge</b><span>Звук и приватные комнаты</span></div><div class="s-feature"><b>Стильные интерьеры</b><span>Атмосфера, в которую хочется вернуться</span></div><div class="s-feature"><b>Удобное место</b><span>Москва, м. Щёлковская</span></div></div></div></section>
+<section class="s-section"><div class="s-wrap"><h2 class="s-title">АТМОСФЕРА, <span>КОТОРУЮ ПОМНЯТ</span></h2><p class="s-sub">Посмотрите пространства SOUL, банкетного зала и lounge.</p><div class="s-gallery"><div class="big"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div></div><div id="booking" class="s-cta"><h2>ВАШ ПОВОД —<br><span style="color:var(--gold2)">НАША АТМОСФЕРА</span></h2><p>Забронируйте стол или оставьте заявку на мероприятие. Администратор свяжется с вами и поможет подобрать формат.</p><div class="s-btns"><a class="s-btn" href="tel:+74952413131">Позвонить</a><a class="s-btn alt" href="mailto:info@soul-rd.ru">Оставить заявку</a></div></div></div></section>
+<footer class="s-footer"><div class="s-wrap"><strong>SOUL РЕСТОРАННЫЙ ДОМ</strong> · Москва, м. Щёлковская, Сиреневый бульвар, 25А · +7 (495) 241-31-31</div></footer>
+</div>
