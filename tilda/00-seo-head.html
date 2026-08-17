@@ -5,8 +5,8 @@ SOUL / РЕСТОРАННЫЙ ДОМ — SEO HEAD FOR TILDA
 Tilda → Настройки страницы → Дополнительный HTML-код для HEAD.
 НЕ вставлять этот файл в T123.
 
-Домен уже указан: https://soul-rd.ru/
-Если рабочий домен изменится — заменить canonical и og:url.
+Домен: https://soul-rd.ru/
+Если рабочий домен изменится — заменить canonical, og:url и ссылки в JSON-LD.
 -->
 <title>Ресторанный дом SOUL в Москве — ресторан, банкетный зал и караоке</title>
 <meta name="description" content="Ресторанный дом SOUL в Москве на Сиреневом бульваре, 25А: ресторан, банкетный зал и караоке. Ужины, свадьбы, дни рождения, корпоративы и мероприятия. Бронирование столиков и залов.">
@@ -33,7 +33,7 @@ Tilda → Настройки страницы → Дополнительный H
 <meta name="twitter:description" content="Ресторан, банкетный зал и караоке на Сиреневом бульваре, 25А. Бронирование столиков и проведение мероприятий.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/4B1A8318.jpg">
 
-<!-- Structured data: LocalBusiness / Restaurant -->
+<!-- Structured data: Restaurant -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,9 +42,7 @@ Tilda → Настройки страницы → Дополнительный H
   "name": "Ресторанный дом SOUL",
   "alternateName": ["SOUL", "Soul ресторанный дом"],
   "url": "https://soul-rd.ru/",
-  "image": [
-    "https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/4B1A8318.jpg"
-  ],
+  "image": ["https://raw.githubusercontent.com/nyaganmaksimov-sys/rd-soul/main/images/4B1A8318.jpg"],
   "description": "Ресторанный дом SOUL в Москве: ресторан, банкетный зал и караоке-лаунж. Место для ужинов, праздников, свадеб, дней рождения, корпоративов и других мероприятий.",
   "telephone": "+7-495-674-74-30",
   "priceRange": "₽₽",
@@ -56,43 +54,30 @@ Tilda → Настройки страницы → Дополнительный H
     "postalCode": "105425",
     "addressCountry": "RU"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Москва"
-  },
-  "hasMap": "https://yandex.ru/maps/-/CCU5example",
-  "sameAs": [],
+  "areaServed": {"@type": "City", "name": "Москва"},
   "potentialAction": {
     "@type": "ReserveAction",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://soul-rd.ru/#booking",
       "inLanguage": "ru-RU",
-      "actionPlatform": [
-        "https://schema.org/DesktopWebPlatform",
-        "https://schema.org/MobileWebPlatform"
-      ]
+      "actionPlatform": ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"]
     },
-    "result": {
-      "@type": "Reservation",
-      "name": "Бронирование столика или мероприятия в SOUL"
-    }
+    "result": {"@type": "Reservation", "name": "Бронирование столика или мероприятия в SOUL"}
   }
 }
 </script>
 
-<!-- Breadcrumbs for search engines -->
+<!-- Single-page breadcrumb data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "SOUL — ресторанный дом",
-      "item": "https://soul-rd.ru/"
-    }
-  ]
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "SOUL — ресторанный дом",
+    "item": "https://soul-rd.ru/"
+  }]
 }
 </script>
